@@ -15,7 +15,7 @@ app.get('/calc',function(req,res){
     var answer;
 
     if(operation=="add"){
-      answer=(numberone+numbertwo)
+      answer=(+numberone + +numbertwo)
         res.send("Answer: "+ answer)
     }else if(operation=="sub"){
       answer=numberone-numbertwo;
